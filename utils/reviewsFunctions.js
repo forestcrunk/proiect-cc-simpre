@@ -55,13 +55,14 @@ export const createReview = async (data) => {
     return response.json();
 }
 
-export const updateReview = async (data) => {
+export const updateReview = async (data, userId) => {
     const { _id, ...body} = data;
 
     const response = await fetch(`/api/my_reviews/${_id}`, {
         method: 'PUT',
         headers: { 
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'userId': userId
         },
         body: JSON.stringify(body),
     });

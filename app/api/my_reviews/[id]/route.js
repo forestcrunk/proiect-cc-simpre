@@ -1,4 +1,5 @@
 import { getCollection } from "@/lib/mongodb";
+import { getUserByID } from "@/utils/userFunctions";
 import { ObjectId } from "mongodb";
 import { NextResponse } from "next/server";
 
@@ -30,14 +31,13 @@ export async function GET(request, { params }) {
     const reviews = await getCollection('reviews');
 
     const review = await reviews.findOne({ _id });
+    if (!review) {
+        return NextResponse.json({ error: 'Not Found'}, {status: 404});
+    }
     const userId = request.headers.get('userId');
 
     if(userId !== review.userId) {
         return NextResponse.json({error: 'Forbidden'}, { status: 403});
-    }
-
-    if (!review) {
-        return NextResponse.json({ error: 'Not Found'}, {status: 404});
     }
 
     return NextResponse.json(review);
@@ -53,11 +53,13 @@ export async function PUT(request, {params}) {
     delete body._id;
     const userId = request.headers.get('userId');
 
-    if(userId !== body.userId) {
+    const reviews = await getCollection('reviews');
+    const review_to_edit = await reviews.findOne({_id});
+
+    if(userId !== review_to_edit.userId) {
         return NextResponse.json({error: 'Forbidden'}, { status: 403});
     }
 
-    const reviews = await getCollection('reviews');
 
     const updatedReview = await reviews.findOneAndUpdate(
         { _id }, 

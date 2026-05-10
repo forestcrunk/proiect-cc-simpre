@@ -11,7 +11,7 @@ const MainPage = () => {
 
     const fetchReviews = async () => {
         const data = await getReviewsOfUser(userId);
-        
+
         if (data) {
             setReviews(data);
         }
@@ -64,7 +64,7 @@ const MainPage = () => {
 
               <div className="flex gap-2">
                 <Link
-                  href={`/reviews/edit?id=${review._id}`}
+                  href={`/my_reviews/edit?id=${review._id}`}
                   className="bg-yellow-400 text-white rounded px-3 py-1 hover:bg-yellow-500 transition-colors text-sm"
                 >
                   Edit
