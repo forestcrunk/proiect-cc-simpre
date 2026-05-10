@@ -1,9 +1,10 @@
-# lightRYM
-Jinga Ștefan-Andrei
-Grupa: 1146
+# lightRYM - minimal music review web-app
+Jinga Ștefan-Andrei, Grupa 1146
 
 Prezentare video: 
-Link aplicație publicată: 
+
+Link aplicație publicată: https://proiect-cc-simpre-ten.vercel.app/
+
 GitHub repo: https://github.com/forestcrunk/proiect-cc-simpre
 
 ## 1. Introducere
@@ -86,9 +87,7 @@ Aplicația include un API RESTful implementat cu ajutorul Next.js, aflat în `ap
 
 **Request**: GET /api/my_reviews
 
-*Request Headers*: {
-    userId: "6a006d5c0251fef1f8e2e4e7"
-}
+*Request Headers*: `userId: "6a006d5c0251fef1f8e2e4e7"`
 
 **Response**: 200 OK
 
@@ -115,8 +114,14 @@ Aplicația include un API RESTful implementat cu ajutorul Next.js, aflat în `ap
 
 ## 5. Capturi de ecran din aplicație
 ![](./screenshots/img1.jpg)
+<p style="text-align: center;">Figura 1 - Homepage</p>
 ![](./screenshots/img2.jpg)
+<p style="text-align: center;">Figura 2 - About</p>
 ![](./screenshots/img3.jpg)
+<p style="text-align: center;">Figura 3 - Contact</p>
 ![](./screenshots/img4.jpg)
+<p style="text-align: center;">Figura 4 -Login</p>
 ![](./screenshots/img5.jpg)
+<p style="text-align: center;">Figura 5 - Register</p>
 ![](./screenshots/img6.jpg)
+<p style="text-align: center;">Figura 6 - User reviews</p>
