@@ -113,15 +113,19 @@ Aplicația include un API RESTful implementat cu ajutorul Next.js, aflat în `ap
 ```
 
 ## 5. Capturi de ecran din aplicație
-![](./screenshots/img1.jpg)
+![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img1.jpg)
 <p style="text-align: center;">Figura 1 - Homepage</p>
-![](./screenshots/img2.jpg)
+![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img2.jpg)
 <p style="text-align: center;">Figura 2 - About</p>
-![](./screenshots/img3.jpg)
+![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img3.jpg)
 <p style="text-align: center;">Figura 3 - Contact</p>
-![](./screenshots/img4.jpg)
+![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img4.jpg)
 <p style="text-align: center;">Figura 4 - Login</p>
-![](./screenshots/img5.jpg)
+![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img5.jpg)
 <p style="text-align: center;">Figura 5 - Register</p>
-![](./screenshots/img6.jpg)
+![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img6.jpg)
 <p style="text-align: center;">Figura 6 - User reviews</p>
+![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img7.jpg)
+<p style="text-align: center;">Figura 7 - Edit review</p>
+
+
