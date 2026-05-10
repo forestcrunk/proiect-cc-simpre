@@ -1,7 +1,7 @@
 # lightRYM - minimal music review web-app
 Jinga Ștefan-Andrei, Grupa 1146
 
-Prezentare video: 
+Prezentare video: https://youtu.be/x8q7Q7VWLrk
 
 Link aplicație publicată: https://proiect-cc-simpre-ten.vercel.app/
 
