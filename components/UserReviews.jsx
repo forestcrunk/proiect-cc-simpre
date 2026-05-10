@@ -7,11 +7,11 @@ import { useEffect, useState } from 'react';
 
 const MainPage = () => {
     const [reviews, setReviews] = useState([]);
-    const userId = sessionStorage.getItem("sessionId")
+    const userId = sessionStorage.getItem("userId")
 
     const fetchReviews = async () => {
         const data = await getReviewsOfUser(userId);
-
+        
         if (data) {
             setReviews(data);
         }
@@ -38,7 +38,7 @@ const MainPage = () => {
         <br />
         <div className="flex items-center gap-3">
           <Link
-            href="/reviews/create"
+            href="/my_reviews/create"
             className="bg-blue-600 text-white rounded px-4 py-2 hover:bg-blue-700 transition-colors"
           >
             Add Review

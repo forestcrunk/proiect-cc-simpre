@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/utils/authContext';
+import { loginUser } from '@/utils/userFunctions';
 
 export default function Login() {
   const { setIsLoggedIn } = useAuth(); 
@@ -35,24 +36,18 @@ export default function Login() {
   const loginSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/users/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
+      const response = await loginUser({
           email: user.email,
-          password: user.password,
-        }),
-      });
-
-      const data = await response.json();
-      console.log(data)
+          password: user.password
+      })
+      console.log(response)
       
-      if (response.ok) {
-        sessionStorage.setItem('userId', data.userId); 
+      if (response.message) {
+        sessionStorage.setItem('userId', response.userId); 
         setIsLoggedIn(true);
         router.push('/');
       } else {
-        setErr(data.message || 'Login failed');
+        setErr(response.error || 'Login failed');
       }
     } catch (err) {
       setErr('An error occurred. Please try again.');

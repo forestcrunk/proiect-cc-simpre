@@ -63,7 +63,7 @@ export async function POST(request) {
 
     try {
       const {insertedId} = await users.insertOne(newUser);
-      return NextResponse.json({_id: insertedId, ...newUser}, { status: 200 });
+      return NextResponse.json({_id: insertedId, ...newUser});
     }
     catch (err) {
       return NextResponse.json({error: 'Failed to register user'}, { status: 500});

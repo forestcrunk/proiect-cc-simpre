@@ -14,7 +14,7 @@ const MainPage = () => {
 
     const fetchReviews = async () => {
         const data = await getAllReviews();
-
+        
         if (data) {
             setReviews(data);
         }

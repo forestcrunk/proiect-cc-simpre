@@ -10,11 +10,15 @@ export default function AboutPage() {
               </div>
         
               <p>
-                lightRYM is a minimalist website designed to allow users to post simple reviews about their favourite music albums (light-rate-your-music). It is built using React and NextJS, and implements a simple, yet complete RESTful API.
+                lightRYM is a minimalist website designed to allow users to post simple reviews about their favourite music albums (light-rate-your-music). The "Home" page displays all the reviews currently posted, as well as the usernames of the people who posted them.
               </p>
               <br></br>
               <p>
-                Behind the scenes, it utilizes MongoDB's cloud service to host and access the database, and SendGrid's cloud service to facilitate the transmission of feedback via email through the Contact page.
+                To use the website, click on "Register" in the navigation bar to create a new account, or "Login" to log into an existing account. Once you are logged in, you can visit the "My Reviews" page to begin adding your personal reviews.
+              </p>
+              <br></br>
+              <p>
+                Thank you for visiting, and I hope you enjoy using lightRYM. If you have any feedback or suggestions, please send them to me via the "Contact" page.
               </p>
             </div>
         </div>

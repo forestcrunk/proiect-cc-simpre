@@ -36,12 +36,15 @@ export async function POST(request) {
 
     
     const existingUser = await users.findOne({ email });
+    if(!existingUser) {
+        return NextResponse.json({error:"Invalid email or password."}, {status: 404});
+    }
     const passwordCheck = await bcrypt.compare(password, existingUser.password);
     if(!passwordCheck || !existingUser) {
         return NextResponse.json({error:"Invalid email or password."}, {status: 404});
     }
 
-    console.log(existingUser);
+    //console.log(existingUser);
     return NextResponse.json({
         message: 'Login successful.',
         userId: existingUser._id})

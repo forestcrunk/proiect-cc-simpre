@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const sessionId = sessionStorage.getItem('sessionId');
+    const sessionId = sessionStorage.getItem('userId');
     if (sessionId) {
       setIsLoggedIn(true);
     }
