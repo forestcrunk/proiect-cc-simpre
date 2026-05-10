@@ -113,19 +113,33 @@ Aplicația include un API RESTful implementat cu ajutorul Next.js, aflat în `ap
 ```
 
 ## 5. Capturi de ecran din aplicație
+
 ![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img1.jpg)
-<p style="text-align: center;">Figura 1 - Homepage</p>
+
+Figura 1 - Homepage
+
 ![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img2.jpg)
-<p style="text-align: center;">Figura 2 - About</p>
+
+Figura 2 - About
+
 ![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img3.jpg)
-<p style="text-align: center;">Figura 3 - Contact</p>
+
+Figura 3 - Contact
+
 ![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img4.jpg)
-<p style="text-align: center;">Figura 4 - Login</p>
+
+Figura 4 - Login
+
 ![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img5.jpg)
-<p style="text-align: center;">Figura 5 - Register</p>
+
+Figura 5 - Register
+
 ![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img6.jpg)
-<p style="text-align: center;">Figura 6 - User reviews</p>
+
+Figura 6 - User reviews
+
 ![](https://github.com/forestcrunk/proiect-cc-simpre/blob/main/screenshots/img7.jpg)
-<p style="text-align: center;">Figura 7 - Edit review</p>
+
+Figura 7 - Edit review
 
 
