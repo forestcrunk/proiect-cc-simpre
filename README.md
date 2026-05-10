@@ -120,7 +120,7 @@ Aplicația include un API RESTful implementat cu ajutorul Next.js, aflat în `ap
 ![](./screenshots/img3.jpg)
 <p style="text-align: center;">Figura 3 - Contact</p>
 ![](./screenshots/img4.jpg)
-<p style="text-align: center;">Figura 4 -Login</p>
+<p style="text-align: center;">Figura 4 - Login</p>
 ![](./screenshots/img5.jpg)
 <p style="text-align: center;">Figura 5 - Register</p>
 ![](./screenshots/img6.jpg)
