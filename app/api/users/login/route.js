@@ -41,5 +41,8 @@ export async function POST(request) {
         return NextResponse.json({error:"Invalid email or password."}, {status: 404});
     }
 
-    return NextResponse.json({message: `Login successful.`})
+    console.log(existingUser);
+    return NextResponse.json({
+        message: 'Login successful.',
+        userId: existingUser._id})
 }

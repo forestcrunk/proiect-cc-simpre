@@ -1,12 +1,16 @@
-
 'use client';
 
 import { getAllReviews } from '@/utils/reviewsFunctions';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import NavBar from './NavBar';
+import { useAuth } from '@/utils/authContext';
+
 
 const MainPage = () => {
     const [reviews, setReviews] = useState([]);
+    const { isLoggedIn, setIsLoggedIn } = useAuth();
+
 
     const fetchReviews = async () => {
         const data = await getAllReviews();
@@ -21,6 +25,8 @@ const MainPage = () => {
     }, [])
 
   return (
+    <div>
+    <NavBar />
     <div className="max-w-4xl mx-auto p-8">
       <div className="flex flex-col justify-between items-center mb-8">
         <h1 className="text-3xl font-bold">Reviews</h1>
@@ -48,6 +54,7 @@ const MainPage = () => {
           ))}
         </div>
       )}
+    </div>
     </div>
   );
 }

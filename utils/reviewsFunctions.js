@@ -17,14 +17,25 @@ export const getReviewsOfUser = async (userId) => {
     return response.json();
 }
 
-export const getReviewById = async (id) => {
-    const response = await fetch(`/api/my_reviews/${id}`);
+export const getReviewById = async (id, userId) => {
+    const response = await fetch(`/api/my_reviews/${id}`, {
+        method: 'GET',
+        headers: { 
+            'Content-Type': 'application/json',
+            'userId': userId
+        }
+    });
     if (!response.ok) return null;
     return response.json();
 }
 
-export const deleteReview = async (id) => {
-    const response = await fetch(`/api/my_reviews/${id}`, { method: 'DELETE' });
+export const deleteReview = async (id, userId) => {
+    const response = await fetch(`/api/my_reviews/${id}`, { 
+        method: 'DELETE',
+        headers: {
+            'userId': userId
+        }
+    });
     return response.ok;
 };
 
